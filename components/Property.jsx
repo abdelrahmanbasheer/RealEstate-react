@@ -30,8 +30,8 @@ const Property = ({property:{ coverPhoto,price ,rentFrequency,rooms,title,baths,
         </Box>
 
     </Flex>
-    <Flex alignItems="center" p="1" justifyContent="space-between" w="250px" color="blue.400">
-    {rooms} <FaBed></FaBed> | {baths} <FaBath></FaBath> | {millify(area)} sqft <bsGridFill></bsGridFill>
+    <Flex alignItems="center" p="1" justifyContent="space-between" w="250px" >
+    {rooms} <FaBed color="black"></FaBed> | {baths} <FaBath color="#17A4B0"></FaBath> | {millify(area)} sqft <bsGridFill></bsGridFill>
 
     </Flex>
     <Text fontSize="lg">
