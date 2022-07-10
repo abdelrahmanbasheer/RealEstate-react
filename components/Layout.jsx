@@ -6,7 +6,7 @@ const Layout=({children})=>(
   
     <>
     <Head>
-        <title>EMAAR Properties</title>
+        <title>EMAAR</title>
     </Head>
     <Box maxWidth="1280px" m="auto">
 <header>
