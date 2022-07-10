@@ -6,7 +6,7 @@ const Layout=({children})=>(
   
     <>
     <Head>
-        <title>Real Estate</title>
+        <title>EMAAR Properties</title>
     </Head>
     <Box maxWidth="1280px" m="auto">
 <header>
