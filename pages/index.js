@@ -37,9 +37,9 @@ export default function Home({propertyForsale,propertyForRent}) {
   buttonText={"explore renting "}
    linkName="/search?purpose=for-rent"
     imageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4" />
-<Flex flexWrap="wrap">
+<Flex  flexWrap="wrap">
 {propertyForRent.slice(0,6).map((property)=>(
-  <Property property={property} key={property.id}></Property>
+  <Property  property={property} key={property.id}></Property>
 ))}
 </Flex>
 <Banner  purpose={"BUY A HOME"}

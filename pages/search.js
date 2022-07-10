@@ -34,7 +34,7 @@ return(
 
         </Flex>
         {searchFilters && <SearchFilters></SearchFilters>}
-        <Text fontSize="2xl" p="4" fontWeight="bold"> Properties {router.query.purpose}</Text>
+        <Text fontSize="2xl" ml="6px" p="4" fontWeight="bold"> Properties {router.query.purpose}</Text>
         <Flex flexWrap="wrap">
         {properties.map((property)=><Property property={property} key={property.id}></Property>)}
         </Flex>

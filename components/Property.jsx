@@ -5,13 +5,14 @@ import {FaBed,FaBath} from "react-icons/fa"
 import {bsGridFill} from "react-icons/bs"
 import {GoVerified } from "react-icons/go"
 import {millify} from "millify"
+
 import DefaultImage from "../assets/house.jpg"
 
-const Property = ({property:{ coverPhoto,price ,rentFrequency,rooms,title,baths,area,agency,isVerified,exeternalId}})=>(
-    <Link href={`/property/${exeternalId}`} passHref>
-        <Flex flexWrap="wrap" w="420px" p="5" pt="0" justifyContent="flex-start" cursor="pointer">
-    <Box>
-        <Image src={coverPhoto? coverPhoto.url : DefaultImage } width="400px" height="260px" alt="house">
+const Property = ({property:{ coverPhoto,price ,rentFrequency,rooms,title,baths,area,agency,isVerified,externalID}})=>(
+    <Link href={`/property/${externalID}`} passHref>
+        <Flex  flexWrap="wrap" w="420px" p="5" pt="0" justifyContent="flex-start" cursor="pointer">
+    <Box >
+        <Image  src={coverPhoto? coverPhoto.url : DefaultImage } width="400px" height="260px" style={{borderRadius:"5px"}} alt="house">
 
         </Image>
     </Box>
@@ -34,7 +35,7 @@ const Property = ({property:{ coverPhoto,price ,rentFrequency,rooms,title,baths,
     {rooms} <FaBed color="black"></FaBed> | {baths} <FaBath color="#17A4B0"></FaBath> | {millify(area)} sqft <bsGridFill></bsGridFill>
 
     </Flex>
-    <Text fontSize="lg">
+    <Text m="5px" fontSize="lg">
  {title.length> 30 ? `${title.substring(0,30)}...` : title}
     </Text>
     </Box>
