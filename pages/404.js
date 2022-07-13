@@ -2,7 +2,7 @@ import { Box ,Text,Flex, Button, Spacer} from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
 import React from 'react'
-import errorimage from "../assets/004.jpg"
+
 
 const Notfound = () => {
   return (
