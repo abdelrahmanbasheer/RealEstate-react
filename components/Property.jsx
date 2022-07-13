@@ -10,9 +10,18 @@ import DefaultImage from "../assets/house.jpg"
 
 const Property = ({property:{ coverPhoto,price ,rentFrequency,rooms,title,baths,area,agency,isVerified,externalID}})=>(
     <Link href={`/property/${externalID}`} passHref>
-        <Flex  flexWrap="wrap" w="420px" p="5" pt="0" justifyContent="flex-start" cursor="pointer">
+        <Flex 
+        _hover={{
+            borderRight:"1px" ,borderLeft:"1px" ,borderColor:"#1e86f1" ,
+            transition:"border 1s",
+          
+        
+
+    }} 
+
+    flexWrap="wrap" w="420px" p="5" pt="0" justifyContent="flex-start" cursor="pointer" mb="5" >
     <Box >
-        <Image  src={coverPhoto? coverPhoto.url : DefaultImage } width="400px" height="260px" style={{borderRadius:"5px"}} alt="house">
+        <Image src={coverPhoto? coverPhoto.url : DefaultImage } width="400px" height="260px" style={{borderRadius:"5px"}} alt="house">
 
         </Image>
     </Box>
@@ -25,7 +34,7 @@ const Property = ({property:{ coverPhoto,price ,rentFrequency,rooms,title,baths,
     <Text fontWeight="bold" fontSize="large">{millify(price)} EGP {rentFrequency&& `/${rentFrequency.slice(0,5)}`}</Text>
         </Flex>
         <Box>
-            <Avatar  src={agency?.logo?.url}/>
+            <Avatar  src={agency.logo.url}/>
 
             
         </Box>
